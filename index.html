@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3</title>
+</head>
+
+<body>
+    <script>
+
+        let str = prompt("Enter Your String", "");
+        let count = parseInt(prompt("Enter How many time you multiply ?", ""));
+        let finalStr = "";
+        str.split('').forEach(element => {
+            if (['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'].includes(element)) {
+                charCount = element.repeat(count);
+                finalStr += charCount;
+            }
+            else {
+                finalStr += element;
+            }
+        })
+        console.log(finalStr);
+
+
+            // TEST
+
+            // HE => 5 =>HEEEEE
+            // HY=>5=>HY
+    </script>
+</body>
+
+</html
